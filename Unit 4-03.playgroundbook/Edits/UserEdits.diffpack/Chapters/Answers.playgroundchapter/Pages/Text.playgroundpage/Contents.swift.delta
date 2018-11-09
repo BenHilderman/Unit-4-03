@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Created by: Benjamin Hilderman
+// Created on: Nov 9,2018
+// Created for: ICS3U
+// This shows your address
+
+func address(apartmentNumber: String, street: String, city: String, province: String, postalCode: String) {
+    if apartmentNumber == "" {
+        show("Your address is: " + street + ", " + city + ", " + province + ", " + postalCode)
+    } 
+    else  {
+        show("Your address is: " + apartmentNumber + ", " + street + ", " + city + ", " + province + ", " + postalCode)
+    }
+    
+}
+
+show("Enter your street name")
+
+let yourStreet = ask("Street Name")
+
+show("Enter your city")
+
+let yourCity = ask("City Name")
+
+show("Enter your province")
+
+let yourProvince = ask("Province Name")
+
+show("Enter your postal code")
+
+let yourPostalCode = ask("Postal Code")
+
+show("Do you have an apartment?")
+
+let userAptChoice = ask("Enter Yes or No ")
+
+if userAptChoice == "Yes" || userAptChoice == "yes" {
+    show("Enter your apartment number")
+    let yourAptNumber = ask("Apartment Number")
+    address(apartmentNumber: yourAptNumber, street: yourStreet, city: yourCity, province: yourProvince, postalCode: yourPostalCode)
+}
+else {
+    let yourAptNumber = ""
+    address(apartmentNumber: yourAptNumber, street: yourStreet, city: yourCity, province: yourProvince, postalCode: yourPostalCode)
+}
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 1292}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 71}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
